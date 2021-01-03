@@ -216,18 +216,18 @@ assert_correct_ldc93s1_prodmodel()
   fi;
 
   if [ "$3" = "8k" ]; then
-    assert_correct_inference "$1" "she had to do suit in greasy wash water all year" "$2"
+    assert_correct_inference "$1" "she he rarer are a war all ear" "$2"
   fi;
 }
 
 assert_correct_ldc93s1_prodtflitemodel()
 {
   if [ -z "$3" -o "$3" = "16k" ]; then
-    assert_correct_inference "$1" "she had her dark suit in greasy wash water all year" "$2"
+    assert_correct_inference "$1" "she had your dark suit in greasy wash water all year" "$2"
   fi;
 
   if [ "$3" = "8k" ]; then
-    assert_correct_inference "$1" "she had to do so in greasy wash water all year" "$2"
+    assert_correct_inference "$1" "she had rarer re ear ear all ear" "$2"
   fi;
 }
 
@@ -238,7 +238,7 @@ assert_correct_ldc93s1_prodmodel_stereo_44k()
 
 assert_correct_ldc93s1_prodtflitemodel_stereo_44k()
 {
-  assert_correct_inference "$1" "she had her dark suit in greasy wash water all year" "$2"
+  assert_correct_inference "$1" "she had your dark suit in greasy wash water all year" "$2"
 }
 
 assert_correct_warning_upsampling()
