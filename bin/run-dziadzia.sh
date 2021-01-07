@@ -21,9 +21,9 @@ fi
 export CUDA_VISIBLE_DEVICES=0
 
 python -u DeepSpeech.py --noshow_progressbar \\
-  --train_files /home/stryku/DeepSpeech/data/dziadzia/train.csv \\
-  --dev_files /home/stryku/DeepSpeech/data/dziadzia/dev.csv \\
-  --test_files /home/stryku/DeepSpeech/data/dziadzia/test.csv \\
+  --train_files data/dziadzia/train.csv \\
+  --dev_files data/dziadzia/dev.csv \\
+  --test_files data/dziadzia/test.csv \\
   --train_batch_size 80 \\
   --dev_batch_size 80 \\
   --test_batch_size 40 \\
@@ -37,9 +37,9 @@ python -u DeepSpeech.py --noshow_progressbar \\
   --learning_rate 0.00095 \\
   --report_count 100 \\
   --audio_sample_rate 16000 \\
-  --export_dir /home/stryku/DeepSpeech/data/dziadzia/results/model_export/ \\
-  --checkpoint_dir /home/stryku/DeepSpeech/data/dziadzia/results/checkout/ \\
-  --alphabet_config_path /home/stryku/DeepSpeech/data/dziadzia/alphabet.txt \\
+  --export_dir data/dziadzia/results/model_export/ \\
+  --checkpoint_dir data/dziadzia/results/checkout/ \\
+  --alphabet_config_path data/dziadzia/alphabet.txt \\
   "$@"
 
 # python -u DeepSpeech.py --noshow_progressbar \
