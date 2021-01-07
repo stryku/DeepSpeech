@@ -30,9 +30,6 @@ python -u DeepSpeech.py --noshow_progressbar \
   --n_hidden 375 \
   --epochs 33 \
   --early_stop False \
-  --es_mean_th 0.1 \
-  --es_std_th 0.1 \
-  --es_steps 15 \
   --dropout_rate 0.22 \
   --learning_rate 0.00095 \
   --report_count 100 \
