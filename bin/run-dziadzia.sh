@@ -20,26 +20,26 @@ fi
 # and when trying to run on multiple devices (like GPUs), this will break
 export CUDA_VISIBLE_DEVICES=0
 
-python -u DeepSpeech.py --noshow_progressbar \\
-  --train_files /dziadzia/train.csv \\
-  --dev_files /dziadzia/dev.csv \\
-  --test_files /dziadzia/test.csv \\
-  --train_batch_size 80 \\
-  --dev_batch_size 80 \\
-  --test_batch_size 40 \\
-  --n_hidden 375 \\
-  --epochs 33 \\
-  --early_stop False \\
-  --es_mean_th 0.1 \\
-  --es_std_th 0.1 \\
-  --es_steps 15 \\
-  --dropout_rate 0.22 \\
-  --learning_rate 0.00095 \\
-  --report_count 100 \\
-  --audio_sample_rate 16000 \\
-  --export_dir /dziadzia/results/model_export/ \\
-  --checkpoint_dir /dziadzia/results/checkout/ \\
-  --alphabet_config_path /dziadzia/alphabet.txt \\
+python -u DeepSpeech.py --noshow_progressbar \
+  --train_files /dziadzia/train.csv \
+  --dev_files /dziadzia/dev.csv \
+  --test_files /dziadzia/test.csv \
+  --train_batch_size 80 \
+  --dev_batch_size 80 \
+  --test_batch_size 40 \
+  --n_hidden 375 \
+  --epochs 33 \
+  --early_stop False \
+  --es_mean_th 0.1 \
+  --es_std_th 0.1 \
+  --es_steps 15 \
+  --dropout_rate 0.22 \
+  --learning_rate 0.00095 \
+  --report_count 100 \
+  --audio_sample_rate 16000 \
+  --export_dir /dziadzia/results/model_export/ \
+  --checkpoint_dir /dziadzia/results/checkout/ \
+  --alphabet_config_path /dziadzia/alphabet.txt \
   "$@"
 
 # python -u DeepSpeech.py --noshow_progressbar \
